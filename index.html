@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luxury Highway Rush</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="game-shell">
+      <div id="hud">
+        <div class="hud-block">
+          <span>Speed</span>
+          <strong id="speed-value">0</strong>
+        </div>
+        <div class="hud-block">
+          <span>Gear</span>
+          <strong id="gear-value">N</strong>
+        </div>
+        <div class="hud-block">
+          <span>Score</span>
+          <strong id="score-value">0</strong>
+        </div>
+        <div class="hud-block">
+          <span>Best</span>
+          <strong id="best-value">0</strong>
+        </div>
+      </div>
+
+      <div id="panel" class="visible">
+        <div class="panel-card">
+          <h1>Luxury Highway Rush</h1>
+          <p class="tagline">Drive dream cars, dodge traffic, and set a new score.</p>
+
+          <div class="car-picker" id="car-picker"></div>
+          <div class="stats-box" id="stats-box"></div>
+
+          <div class="controls-box">
+            <div><span>W / ↑</span> Accelerate</div>
+            <div><span>S / ↓</span> Brake</div>
+            <div><span>A / D</span> Steer</div>
+            <div><span>Shift</span> Nitro</div>
+            <div><span>R</span> Restart</div>
+          </div>
+
+          <button id="start-button">Start Race</button>
+        </div>
+      </div>
+
+      <canvas id="gameCanvas" width="1280" height="720"></canvas>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
